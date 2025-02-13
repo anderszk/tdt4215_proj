@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+      "ms-python.python",
+      "ms-toolsai.jupyter",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.jupyter-keymap",
+      "ms-toolsai.jupyter-renderers",
+      "mechatroner.rainbow-csv",
+      "GrapeCity.gc-excelviewer",
+      "esbenp.prettier-vscode",
+      "EditorConfig.EditorConfig",
+      "eamodio.gitlens",
+      "mhutchie.git-graph",
+      "donjayamanne.githistory",
+      "yzhang.markdown-all-in-one",
+      "streetsidesoftware.code-spell-checker",
+      "ms-python.debugpy",
+      "donjayamanne.python-extension-pack"
+    ]
+  }
+  
