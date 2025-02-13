@@ -4,7 +4,7 @@
 echo "Setting up the Python virtual environment..."
 
 # Create a virtual environment
-python -m venv venv
+python3 -m venv venv
 
 # Activate the virtual environment (Mac/Linux)
 source venv/bin/activate
