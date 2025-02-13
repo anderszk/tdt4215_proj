@@ -8,9 +8,10 @@ This repository contains the group project for **TDT4215 - Recommender Systems**
 - **Challenges**:
   - Lack of explicit user information.
   - Continuous influx of new articles.
-- **Datasets**:
-  - [MIND Dataset](https://msnews.github.io/) (Microsoft News)
-  - [EB-NeRD Dataset](https://recsys.eb.dk/) (Danish news)
+- **Dataset**:
+  - [MIND Dataset](https://msnews.github.io/)
+  - [Dataset description](https://github.com/msnews/msnews.github.io/blob/master/assets/doc/introduction.md)
+
 
 ## 🔧 Tasks
 
