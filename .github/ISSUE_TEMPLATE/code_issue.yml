@@ -1,0 +1,29 @@
+name: "🛠️ Code Issue"
+description: "Issue related to the codebase"
+labels: ["Code"]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🛠️ Code Issue\nDescribe the issue related to the codebase."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "A clear and concise description of the issue."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Describe how to reproduce the issue."
+    validations:
+      required: false
+
+  - type: textarea
+    id: related_issues
+    attributes:
+      label: "Related Issues"
+      description: "Mention any related issues or PRs."

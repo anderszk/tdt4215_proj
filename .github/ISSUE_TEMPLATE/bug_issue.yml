@@ -1,0 +1,27 @@
+name: "🐛 Bug Report"
+description: "Report a bug in the project"
+labels: ["Bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🐛 Bug Report\nDescribe the bug concisely."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "A clear and concise description of what the bug is."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "List steps to reproduce the issue."
+
+  - type: textarea
+    id: related_issues
+    attributes:
+      label: "Related Issues"
+      description: "Mention any related issues or PRs."

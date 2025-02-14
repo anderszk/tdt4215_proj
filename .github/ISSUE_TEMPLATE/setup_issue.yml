@@ -1,0 +1,29 @@
+name: "Setup Issue"
+description: "Issues related to project setup or configuration"
+labels: ["Setup"]
+body:
+  - type: markdown
+    attributes:
+      value: "## ⚙️ Setup Issue\nDescribe any issues related to installation or configuration."
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Provide details about the setup issue."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Describe how to reproduce the issue."
+    validations:
+      required: false
+
+  - type: textarea
+    id: related_issues
+    attributes:
+      label: "Related Issues"
+      description: "Mention any related issues or PRs."
