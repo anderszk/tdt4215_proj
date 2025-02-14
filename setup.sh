@@ -15,5 +15,9 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # Print success message
+echo " "
 echo "Setup complete! Virtual environment is ready."
 echo "To activate it later, run: source venv/bin/activate"
+echo " "
+echo "To see recommended plugins: Go to Extensions -> Click Recommended -> Install"
+echo " "
