@@ -1,0 +1,129 @@
+blank_issues_enabled: false
+contact_links: []
+
+issue_templates:
+  - name: "🐛 Bug Report"
+    description: "Report a bug in the project"
+    labels: ["Bug"]
+    body:
+      - type: markdown
+        attributes:
+          value: "## 🐛 Bug Report\nDescribe the bug concisely."
+
+      - type: textarea
+        id: description
+        attributes:
+          label: "Description"
+          description: "A clear and concise description of what the bug is."
+        validations:
+          required: true
+
+      - type: textarea
+        id: steps
+        attributes:
+          label: "Steps to Reproduce"
+          description: "List steps to reproduce the issue."
+        validations:
+          required: true
+
+      - type: textarea
+        id: related_issues
+        attributes:
+          label: "Related Issues"
+          description: "Mention any related issues or PRs."
+
+  - name: "🛠️ Code Issue"
+    description: "Report an issue related to the codebase"
+    labels: ["Code"]
+    body:
+      - type: markdown
+        attributes:
+          value: "## 🛠️ Code Issue\nDescribe the issue related to the codebase."
+
+      - type: textarea
+        id: description
+        attributes:
+          label: "Description"
+          description: "A clear and concise description of the issue."
+        validations:
+          required: true
+
+      - type: textarea
+        id: steps
+        attributes:
+          label: "Steps to Reproduce"
+          description: "Describe how to reproduce the issue."
+        validations:
+          required: false
+
+      - type: textarea
+        id: related_issues
+        attributes:
+          label: "Related Issues"
+          description: "Mention any related issues or PRs."
+
+  - name: "⚙️ Setup Issue"
+    description: "Issues related to project setup or configuration"
+    labels: ["Setup"]
+    body:
+      - type: markdown
+        attributes:
+          value: "## ⚙️ Setup Issue\nDescribe any issues related to installation or configuration."
+
+      - type: textarea
+        id: description
+        attributes:
+          label: "Description"
+          description: "Provide details about the setup issue."
+        validations:
+          required: true
+
+      - type: textarea
+        id: steps
+        attributes:
+          label: "Steps to Reproduce"
+          description: "Describe how to reproduce the issue."
+        validations:
+          required: false
+
+      - type: textarea
+        id: related_issues
+        attributes:
+          label: "Related Issues"
+          description: "Mention any related issues or PRs."
+
+  - name: "✨ Feature Request"
+    description: "Request a new feature or improvement"
+    labels: []
+    body:
+      - type: markdown
+        attributes:
+          value: "## ✨ Feature Request\nPropose a new feature or improvement."
+
+      - type: textarea
+        id: description
+        attributes:
+          label: "Feature Description"
+          description: "Describe the feature in detail."
+        validations:
+          required: true
+
+      - type: dropdown
+        id: label
+        attributes:
+          label: "Select a relevant category"
+          description: "Choose a label for the feature request."
+          multiple: true
+          options:
+            - "Data Analytics"
+            - "Data Modelling"
+            - "Data Preprocessing"
+            - "Data Processing"
+        validations:
+          required: true
+
+      - type: textarea
+        id: related_issues
+        attributes:
+          label: "Related Issues"
+          description: "Mention any related issues or PRs."
