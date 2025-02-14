@@ -1,29 +1,27 @@
-name: "🛠️ Code Issue"
-description: "Issue related to the codebase"
+name: "Code Issue"
+description: "Report an issue related to the codebase"
 labels: ["Code"]
+title: "Code:: [Short Description]" # Pre-filled title
 body:
-  - type: markdown
-    attributes:
-      value: "## 🛠️ Code Issue\nDescribe the issue related to the codebase."
-
   - type: textarea
-    id: description
+    id: code_issue
     attributes:
-      label: "Description"
-      description: "A clear and concise description of the issue."
+      label: "Code Issue"
+      description: "Describe the issue, reproduction steps, and related issues."
+      value: |
+        ## 🛠️ Code Issue  
+        <!-- Describe the issue related to the codebase -->
+
+        ## Steps to Reproduce  
+        <!-- Describe how to reproduce the issue -->
+
+        ## Expected Behavior  
+        <!-- What should happen? -->
+
+        ## Actual Behavior  
+        <!-- What actually happens? -->
+
+        ## Related Issues  
+        <!-- Mention any related issues or PRs -->
     validations:
       required: true
-
-  - type: textarea
-    id: steps
-    attributes:
-      label: "Steps to Reproduce"
-      description: "Describe how to reproduce the issue."
-    validations:
-      required: false
-
-  - type: textarea
-    id: related_issues
-    attributes:
-      label: "Related Issues"
-      description: "Mention any related issues or PRs."

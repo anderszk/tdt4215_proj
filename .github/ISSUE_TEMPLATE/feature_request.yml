@@ -1,21 +1,24 @@
-name: "✨ Feature Request"
+name: "Feature Request"
 description: "Request a new feature or improvement"
 labels: []
+title: "Feature:: [Short Description]" # Pre-filled title
 body:
-  - type: markdown
-    attributes:
-      value: "## ✨ Feature Request\nPropose a new feature or improvement."
-
   - type: textarea
-    id: description
+    id: feature_request
     attributes:
-      label: "Feature Description"
-      description: "Describe the feature in detail."
+      label: "Feature Request"
+      description: "Describe the feature request and related issues."
+      value: |
+        ## ✨ Feature Request  
+        <!-- Describe the feature in detail -->
+
+        ## Why is this needed?  
+        <!-- Explain the value this feature brings -->
+
+        ## Implementation Details  
+        <!-- Provide any relevant details on how this could be implemented -->
+
+        ## Related Issues  
+        <!-- Mention any related issues or PRs -->
     validations:
       required: true
-
-  - type: textarea
-    id: related_issues
-    attributes:
-      label: "Related Issues"
-      description: "Mention any related issues or PRs."

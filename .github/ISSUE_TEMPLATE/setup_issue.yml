@@ -1,29 +1,27 @@
 name: "Setup Issue"
 description: "Issues related to project setup or configuration"
 labels: ["Setup"]
+title: "Setup:: [Short Description]" # Pre-filled title
 body:
-  - type: markdown
-    attributes:
-      value: "## ⚙️ Setup Issue\nDescribe any issues related to installation or configuration."
-
   - type: textarea
-    id: description
+    id: setup_issue
     attributes:
-      label: "Description"
-      description: "Provide details about the setup issue."
+      label: "Setup Issue"
+      description: "Describe the setup issue, reproduction steps, and related issues."
+      value: |
+        ## ⚙️ Setup Issue  
+        <!-- Describe the issue related to setup or configuration -->
+
+        ## Steps to Reproduce  
+        <!-- Describe how to reproduce the issue -->
+
+        ## Expected Behavior  
+        <!-- What should happen? -->
+
+        ## Actual Behavior  
+        <!-- What actually happens? -->
+
+        ## Related Issues  
+        <!-- Mention any related issues or PRs -->
     validations:
       required: true
-
-  - type: textarea
-    id: steps
-    attributes:
-      label: "Steps to Reproduce"
-      description: "Describe how to reproduce the issue."
-    validations:
-      required: false
-
-  - type: textarea
-    id: related_issues
-    attributes:
-      label: "Related Issues"
-      description: "Mention any related issues or PRs."
