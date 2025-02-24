@@ -1,0 +1,21 @@
+@startuml
+class behaviours {
+    * ImpressionID 
+    * UserID
+    * Time
+    * History : lists of newsIDs
+    * Impressions : Bool, cliked newsid or not
+}
+Class news{
+    * NewsID
+    * category
+    * subcategory
+    * Title
+    * abstarct
+    * Url
+    * title entities
+    *abstarct entities
+}
+
+behaviours "0-1" <-- "1" news : History 
+@enduml
